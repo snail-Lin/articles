@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 前端技术分享
 subtitle:
 description:
 keywords:
-author: John Doe
-language:
+author: linyihan
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.yihanv.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,7 +73,28 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: icarus
+theme: next
+
+#live2D
+live2d:
+  enable: false
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-shizuku
+  display:
+    superSample: 2
+    width: 120
+    height: 250
+    position: right
+    hOffset: 0
+    vOffset: -30
+  mobile:
+    show: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
